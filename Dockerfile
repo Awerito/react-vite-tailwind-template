@@ -4,7 +4,6 @@ WORKDIR /app
 
 RUN corepack enable && corepack prepare yarn@4.9.1 --activate
 
-COPY .yarnrc.yml ./
 COPY package.json yarn.lock ./
 
 RUN yarn install --immutable
