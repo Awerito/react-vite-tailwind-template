@@ -41,7 +41,7 @@ export default function Contact() {
           onChange={onChange}
         />
         <div>
-          <Button className="bg-indigo-600 text-white hover:bg-indigo-500">
+          <Button className="bg-pink-600 text-white hover:bg-pink-500">
             Enviar
           </Button>
         </div>
