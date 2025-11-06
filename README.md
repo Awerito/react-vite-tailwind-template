@@ -1,16 +1,76 @@
-# React + Vite
+# 🧱 React + Vite + Tailwind Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Plantilla base para iniciar proyectos web modernos con **React + Vite +
+TailwindCSS (v4)**.  
+Incluye modo oscuro y estructura limpia para escalar fácilmente.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Requisitos
 
-## React Compiler
+- **Node.js ≥ 24**
+- **Yarn**
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Instalación
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/Awerito/landing-template.git
+cd landing-template
+yarn && yarn install
+```
+
+---
+
+## 🧩 Estructura
+
+```
+.
+├── src
+│   ├── components
+│   │   ├── Button.jsx
+│   │   ├── Card.jsx
+│   │   ├── Input.jsx
+│   │   └── Navbar.jsx
+│   ├── sections
+│   │   ├── Contact.jsx
+│   │   ├── Features.jsx
+│   │   ├── Footer.jsx
+│   │   └── Hero.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── eslint.config.js
+├── index.html
+├── package.json
+├── README.md
+├── vite.config.js
+└── yarn.lock
+```
+
+* **components/** → piezas reutilizables (botones, tarjetas, inputs).
+* **sections/** → secciones principales de la landing.
+* **App.jsx** → compone toda la página.
+
+---
+
+## 💡 Desarrollo
+
+```bash
+yarn dev
+```
+
+Aplicación disponible en `http://localhost:5173`
+
+---
+
+## 🏗️ Build y preview
+
+```bash
+yarn build
+yarn preview
+```
+
+Genera el directorio `dist/` listo para subir a cualquier hosting estático
+(Netlify, Vercel, Dokploy, etc.).
