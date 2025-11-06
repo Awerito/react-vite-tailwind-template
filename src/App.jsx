@@ -1,9 +1,19 @@
-function App() {
+import Navbar from "./components/Navbar";
+import Hero from "./sections/Hero";
+import Features from "./sections/Features";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
+
+export default function App() {
   return (
-    <h1 className="flex items-center justify-center h-screen text-4xl font-bold">
-      Welcome to My App
-    </h1>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Features />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
-
-export default App;
